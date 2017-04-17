@@ -794,9 +794,9 @@ hljs.initHighlightingOnLoad();
 <section data-transition="linear" data-transition-speed="default">
 <h3>Today&#x27;s Data &amp; Slides</h3>
 <div class="slideContent" >
-<h2><code>bit.ly/gd_slides</code></h2>
+<h2><code>bit.ly/neo4j_gd_slides</code></h2>
 
-<h2><code>bit.ly/gd_data</code></h2>
+<h2><code>bit.ly/neo4j_gd_import</code></h2>
 
 </div>
 
@@ -1066,8 +1066,8 @@ RETURN p.name AS barbecue
 <h3>Results</h3>
 
 <pre><code>                barbecue
-            Railhead BBQ
    Dickey&#39;s Barbecue Pit
+            Railhead BBQ
         Cousin&#39;s Bar-B-Q
  The Salt Lick Bar-B-Que
 </code></pre>
@@ -1089,8 +1089,8 @@ RETURN p.name AS barbecue
 <h3>Result</h3>
 
 <pre><code>                barbecue
-            Railhead BBQ
    Dickey&#39;s Barbecue Pit
+            Railhead BBQ
         Cousin&#39;s Bar-B-Q
  The Salt Lick Bar-B-Que
 </code></pre>
@@ -1113,15 +1113,15 @@ RETURN p.name AS place, c.name AS category
 <h3>Result</h3>
 
 <pre><code>                            place category
-                Rider&#39;s World Bar      Bar
                           Fly Bar      Bar
+                Rider&#39;s World Bar      Bar
      Tigin Irish Pub &amp; Restaurant      Bar
            Gas Monkey Bar &amp; Grill      Bar
  Texas Stadium Skybox Bar &amp; Grill      Bar
                       Cowtown Bar      Bar
                         Vino Volo      Bar
-                     Railhead BBQ Barbecue
             Dickey&#39;s Barbecue Pit Barbecue
+                     Railhead BBQ Barbecue
                  Cousin&#39;s Bar-B-Q Barbecue
           The Salt Lick Bar-B-Que Barbecue
 </code></pre>
@@ -1144,15 +1144,15 @@ RETURN p.name AS place, c.name AS category
 <h3>Result</h3>
 
 <pre><code>                            place category
-                Rider&#39;s World Bar      Bar
                           Fly Bar      Bar
+                Rider&#39;s World Bar      Bar
      Tigin Irish Pub &amp; Restaurant      Bar
            Gas Monkey Bar &amp; Grill      Bar
  Texas Stadium Skybox Bar &amp; Grill      Bar
                       Cowtown Bar      Bar
                         Vino Volo      Bar
-                     Railhead BBQ Barbecue
             Dickey&#39;s Barbecue Pit Barbecue
+                     Railhead BBQ Barbecue
                  Cousin&#39;s Bar-B-Q Barbecue
           The Salt Lick Bar-B-Que Barbecue
 </code></pre>
@@ -1270,12 +1270,12 @@ RETURN p.name AS place, g.number AS gate
 <h3>Result</h3>
 
 <pre><code>                            place gate
-                Rider&#39;s World Bar   15
                           Fly Bar   27
+                Rider&#39;s World Bar   15
      Tigin Irish Pub &amp; Restaurant   20
            Gas Monkey Bar &amp; Grill   31
- Texas Stadium Skybox Bar &amp; Grill   25
  Texas Stadium Skybox Bar &amp; Grill    6
+ Texas Stadium Skybox Bar &amp; Grill   25
                       Cowtown Bar   35
                         Vino Volo   27
                         Vino Volo   17
@@ -1306,8 +1306,8 @@ ORDER BY place
                           Fly Bar   27        E
            Gas Monkey Bar &amp; Grill   31        D
                 Rider&#39;s World Bar   15        E
- Texas Stadium Skybox Bar &amp; Grill   25        C
  Texas Stadium Skybox Bar &amp; Grill    6        B
+ Texas Stadium Skybox Bar &amp; Grill   25        C
      Tigin Irish Pub &amp; Restaurant   20        D
                         Vino Volo   27        E
                         Vino Volo   17        A
@@ -1419,10 +1419,10 @@ RETURN p.name AS place
 <h3>Result</h3>
 
 <pre><code>           place
- T.G.I. Friday&#39;s
- Cool River Cafe
      Burger King
       Manchu Wok
+ Cool River Cafe
+ T.G.I. Friday&#39;s
 </code></pre>
 
 </div>
@@ -1531,9 +1531,9 @@ ORDER BY friends DESC
 <h3>Result</h3>
 
 <pre><code>    user friends          friends_names
-    Hank       3   David, Alice, Elaine
-   Alice       3 Hank, Forrest, Charles
-  Elaine       2          Hank, Forrest
+    Hank       3   Alice, David, Elaine
+   Alice       3 Hank, Charles, Forrest
+  Elaine       2          Forrest, Hank
  Forrest       2          Elaine, Alice
    David       1                   Hank
  Charles       1                  Alice
@@ -1641,9 +1641,9 @@ ORDER BY score DESC
 <h3>Result</h3>
 
 <pre><code>             place score
-   Cool River Cafe     4
  Pizza Hut Express     4
         Manchu Wok     4
+   Cool River Cafe     4
    T.G.I. Friday&#39;s     2
        Burger King     1
 </code></pre>
@@ -2065,7 +2065,7 @@ RETURN u.name, u.created, u.accessed
 <h3>Result</h3>
 
 <pre><code>    u.name     u.created u.accessed
- Your Name 1492445823717          0
+ Your Name 1492447248311          0
 </code></pre>
 
 </div>
@@ -2167,7 +2167,7 @@ DETACH DELETE ian;
 <pre><code>CREATE (:User {name:&#39;Your Name&#39;})
 </code></pre>
 
-<pre><code>Node 3 already exists with label User and property &quot;name&quot;=[Your Name]
+<pre><code>Node 589 already exists with label User and property &quot;name&quot;=[Your Name]
 </code></pre>
 
 <h3>Notes</h3>
@@ -2202,7 +2202,7 @@ DETACH DELETE ian;
 
 <h3>Result</h3>
 
-<pre><code>Node 3 already exists with label User and property &quot;name&quot;=[Your Name]
+<pre><code>Node 589 already exists with label User and property &quot;name&quot;=[Your Name]
 </code></pre>
 
 </div>
@@ -2238,7 +2238,7 @@ DETACH DELETE ian;
 <div class="slideContent" >
 <h3>CSVs</h3>
 
-<h4><code>bit.ly/gd_csv</code></h4>
+<h4><code>bit.ly/neo4j_gd_csv</code></h4>
 
 <h3>Clear Your DB</h3>
 
